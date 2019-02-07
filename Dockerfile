@@ -30,7 +30,6 @@ RUN \
 # Install mysql and tomcat
     apt-get install -yq --no-install-recommends \
         ${TOMCAT} \
-        mysql-server \
         gettext && \
 # Clean up and set timezone
     rm -rf /var/lib/apt/lists/* && \
