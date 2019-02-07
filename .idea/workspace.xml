@@ -1,0 +1,547 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8b765ee0-35a6-47d4-8a8e-e6083be97315" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/classes/META-INF/persistence.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/classes/ehcache.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/classes/log4j.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/classes/repository.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/cmis10/CMIS-Core.xsd.template" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/cmis10/CMIS-Messaging.xsd.template" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/cmis10/CMISWS-Service.wsdl.template" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/cmis11/CMIS-Core.xsd.template" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/cmis11/CMIS-Messaging.xsd.template" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/cmis11/CMISWS-Service.wsdl.template" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/cmsshell.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/cmsshell.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/config/jlanConfig.xml.linux" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/config/jlanConfig.xml.windows" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/config/opencms-importexport.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/config/opencms-modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/config/opencms-search.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/config/opencms-system.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/config/opencms-vfs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/config/opencms-workplace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/config/opencms.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/config/opencms.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/cpappend.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/activation-1.1.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/alkacon-diff-0.9.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/alkacon-simapi-1.0.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/antisamy-1.4.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/antlr-2.7.7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/antlr-runtime-3.5.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/asm-5.0.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/batik-css-1.7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/batik-util-1.7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/bcpkix-jdk15on-1.58.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/bcprov-jdk15on-1.58.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/chemistry-opencmis-commons-api-1.0.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/chemistry-opencmis-commons-impl-1.0.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/chemistry-opencmis-server-bindings-1.0.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/chemistry-opencmis-server-support-1.0.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/commons-beanutils-1.8.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/commons-codec-1.10.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/commons-collections-3.2.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/commons-compress-1.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/commons-dbcp-1.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/commons-digester-1.8.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/commons-email-1.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/commons-fileupload-1.2.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/commons-io-2.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/commons-lang-2.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/commons-lang3-3.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/commons-logging-1.1.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/commons-pool-1.5.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/cryptix-jce-provider.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/cxf-core-3.0.10.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/cxf-rt-bindings-soap-3.0.10.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/cxf-rt-bindings-xml-3.0.10.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/cxf-rt-databinding-jaxb-3.0.10.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/cxf-rt-frontend-jaxws-3.0.10.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/cxf-rt-frontend-simple-3.0.10.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/cxf-rt-transports-http-3.0.10.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/cxf-rt-ws-addr-3.0.10.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/cxf-rt-ws-policy-3.0.10.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/cxf-rt-wsdl-3.0.10.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/db2jcc_license_cu.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/db2jcc_v9.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/derby-10.6.2.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/dom4j-2.0.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/ehcache-core-2.4.7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/ehcache-openjpa-0.2.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/filteringtable-0.9.15.v7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/flying-saucer-core-9.1.11.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/flying-saucer-pdf-openpdf-9.1.11.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/fontbox-1.8.13.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/geronimo-jms_1.1_spec-1.1.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/geronimo-jpa_2.0_spec-1.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/geronimo-jta_1.1_spec-1.1.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/geronimo-validation_1.0_spec-1.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/guava-18.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/guava-gwt-18.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/gwt-servlet-2.7.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/h2-1.2.145.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/hsqldb-2.3.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/htmlparser-1.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/httpclient-4.3.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/httpcore-4.3.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/httpmime-4.3.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/iijdbc-4.0.2-community.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/javax.mail-1.5.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/jaxb-api-2.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/jaxb-core-2.2.11.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/jaxb-impl-2.2.11.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/jaxen-1.1.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/jaxws-api-2.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/jaxws-rt-2.1.7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/jaybird-full-2.1.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/jlan.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/jni/Win32NetBIOS.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/jni/Win32NetBIOSx64.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/jni/Win32Utils.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/jni/Win32Utilsx64.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/joda-time-2.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/jpedal_lgpl.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/json-20140107.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/json-simple-1.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/jsonic-1.2.7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/jsoup-1.8.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/jsr181-api-1.0-MR1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/jsr250-api-1.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/jsr305-2.0.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/jstl-1.1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/jt400.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/jtidy-r8-20060801.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/jug-2.0.0-lgpl.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/jul-to-slf4j-1.7.12.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/langdetect-1.1-20120112.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/log4j-1.2.17.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/lucene-analyzers-common-5.5.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/lucene-backward-codecs-5.5.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/lucene-core-5.5.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/lucene-grouping-5.5.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/lucene-highlighter-5.5.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/lucene-join-5.5.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/lucene-memory-5.5.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/lucene-misc-5.5.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/lucene-queries-5.5.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/lucene-queryparser-5.5.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/lucene-spatial-5.5.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/lucene-suggest-5.5.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/mimepull-1.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/mssql-jtds-1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/mysql-connector-java-5.1.26-bin.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/neethi-3.0.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/nekohtml-1.9.19.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/noggit-0.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/ojdbc14-10.2.0.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/opencms-setup.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/opencms-widgetset.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/opencms.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/opencsv-2.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/openjpa-2.4.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/openpdf-1.0.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/org.apache.bval.bundle-0.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/org.opencms.apollo.template.imgur.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/org.opencms.apollo.template.webform.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/org.opencms.editors.codemirror.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/org.opencms.editors.tinymce.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/org.opencms.gwt.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/org.opencms.ugc.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/org.opencms.workplace.administration.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/org.opencms.workplace.explorer.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/org.opencms.workplace.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/org.opencms.workplace.tools.accounts.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/org.opencms.workplace.tools.cache.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/org.opencms.workplace.tools.content.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/org.opencms.workplace.tools.database.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/org.opencms.workplace.tools.galleryoverview.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/org.opencms.workplace.tools.git.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/org.opencms.workplace.tools.history.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/org.opencms.workplace.tools.link.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/org.opencms.workplace.tools.modules.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/org.opencms.workplace.tools.projects.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/org.opencms.workplace.tools.publishqueue.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/org.opencms.workplace.tools.scheduler.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/org.opencms.workplace.tools.searchindex.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/org.opencms.workplace.tools.sites.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/org.opencms.workplace.tools.workplace.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/org.restlet-2.3.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/oro-2.0.8.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/pdfbox-1.8.13.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/poi-3.8.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/poi-ooxml-3.8.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/poi-ooxml-schemas-3.8.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/poi-scratchpad-3.8.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/popupbutton-2.5.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/postgresql-9.0-801.jdbc3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/quartz-1.5.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/saaj-api-1.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/saaj-impl-1.3.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/scrypt-1.4.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/serp-1.13.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/slf4j-api-1.7.12.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/slf4j-log4j12-1.7.12.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/solr-core-5.5.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/solr-solrj-5.5.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/spatial4j-0.4.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/standard-1.1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/stax2-api-3.1.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/streambuffer-0.9.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/stringtemplate-3.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/tika-core-1.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/tika-parsers-1.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/vaadin-push-7.7.13.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/vaadin-server-7.7.13.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/vaadin-shared-7.7.13.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/vaadin-themes-7.7.13.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/woodstox-core-asl-4.4.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/wsdl4j-1.6.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/wstx-asl-3.2.7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/xbean-asm5-shaded-3.17.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/xercesImpl-2.11.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/xml-apis-1.4.01.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/xml-resolver-1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/xmlbeans-2.3.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/xmlschema-core-2.2.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/lib/zookeeper-3.4.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/logs/opencms.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/opencms.tld" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/packages/modules/org.opencms.ade.config-10.5.4.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/packages/modules/org.opencms.apollo.template.blog-10.5.1.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/packages/modules/org.opencms.apollo.template.contact-10.5.1.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/packages/modules/org.opencms.apollo.template.core-10.5.1.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/packages/modules/org.opencms.apollo.template.democontents-10.5.4.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/packages/modules/org.opencms.apollo.template.disqus-10.5.1.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/packages/modules/org.opencms.apollo.template.event-10.5.1.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/packages/modules/org.opencms.apollo.template.faq-10.5.1.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/packages/modules/org.opencms.apollo.template.flexible-10.5.1.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/packages/modules/org.opencms.apollo.template.imagegallery-10.5.1.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/packages/modules/org.opencms.apollo.template.imgur-10.5.1.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/packages/modules/org.opencms.apollo.template.job-10.5.1.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/packages/modules/org.opencms.apollo.template.linksequence-10.5.1.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/packages/modules/org.opencms.apollo.template.list-10.5.1.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/packages/modules/org.opencms.apollo.template.map-10.5.1.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/packages/modules/org.opencms.apollo.template.navigation-10.5.1.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/packages/modules/org.opencms.apollo.template.shariff-10.5.1.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/packages/modules/org.opencms.apollo.template.sitemap-10.5.1.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/packages/modules/org.opencms.apollo.template.slider-10.5.1.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/packages/modules/org.opencms.apollo.template.slidercomplex-10.5.1.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/packages/modules/org.opencms.apollo.template.tabs-10.5.1.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/packages/modules/org.opencms.apollo.template.webform-10.5.1.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/packages/modules/org.opencms.apollo.theme-10.5.1.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/packages/modules/org.opencms.editors-10.5.1.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/packages/modules/org.opencms.editors.codemirror-10.5.4.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/packages/modules/org.opencms.editors.tinymce-10.5.4.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/packages/modules/org.opencms.gwt-10.5.2.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/packages/modules/org.opencms.jquery-10.5.0.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/packages/modules/org.opencms.jsp.search-10.5.1.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/packages/modules/org.opencms.locale.cs-10.5.4.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/packages/modules/org.opencms.locale.da-10.5.2.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/packages/modules/org.opencms.locale.de-10.5.4.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/packages/modules/org.opencms.locale.es-10.5.4.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/packages/modules/org.opencms.locale.it-10.5.4.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/packages/modules/org.opencms.locale.ja-10.5.4.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/packages/modules/org.opencms.locale.ru-10.5.4.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/packages/modules/org.opencms.locale.zh-10.5.4.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/packages/modules/org.opencms.ugc-10.5.0.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/packages/modules/org.opencms.workplace-10.5.3.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/packages/modules/org.opencms.workplace.administration-10.5.0.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/packages/modules/org.opencms.workplace.explorer-10.5.0.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/packages/modules/org.opencms.workplace.handler-10.5.0.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/packages/modules/org.opencms.workplace.spellcheck-10.5.0.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/packages/modules/org.opencms.workplace.tools.accounts-10.5.2.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/packages/modules/org.opencms.workplace.tools.cache-10.5.0.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/packages/modules/org.opencms.workplace.tools.content-10.5.0.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/packages/modules/org.opencms.workplace.tools.database-10.5.0.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/packages/modules/org.opencms.workplace.tools.galleryoverview-10.5.0.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/packages/modules/org.opencms.workplace.tools.git-10.5.1.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/packages/modules/org.opencms.workplace.tools.history-10.5.0.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/packages/modules/org.opencms.workplace.tools.link-10.5.0.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/packages/modules/org.opencms.workplace.tools.modules-10.5.1.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/packages/modules/org.opencms.workplace.tools.projects-10.5.0.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/packages/modules/org.opencms.workplace.tools.publishqueue-10.5.0.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/packages/modules/org.opencms.workplace.tools.scheduler-10.5.0.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/packages/modules/org.opencms.workplace.tools.searchindex-10.5.1.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/packages/modules/org.opencms.workplace.tools.sites-10.5.0.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/packages/modules/org.opencms.workplace.tools.workplace-10.5.2.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/packages/modules/org.opencms.workplace.traditional-10.5.0.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/packages/modules/readme.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/packages/readme.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/setup.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/setup.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/setupdata/cmssetup.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/solr/configsets/default/conf/currency.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/solr/configsets/default/conf/elevate.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/solr/configsets/default/conf/lang/contractions_ca.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/solr/configsets/default/conf/lang/contractions_fr.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/solr/configsets/default/conf/lang/contractions_ga.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/solr/configsets/default/conf/lang/contractions_it.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/solr/configsets/default/conf/lang/hyphenations_ga.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/solr/configsets/default/conf/lang/stemdict_nl.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/solr/configsets/default/conf/lang/stoptags_ja.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/solr/configsets/default/conf/lang/stopwords_ar.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/solr/configsets/default/conf/lang/stopwords_bg.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/solr/configsets/default/conf/lang/stopwords_ca.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/solr/configsets/default/conf/lang/stopwords_cz.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/solr/configsets/default/conf/lang/stopwords_da.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/solr/configsets/default/conf/lang/stopwords_de.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/solr/configsets/default/conf/lang/stopwords_el.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/solr/configsets/default/conf/lang/stopwords_en.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/solr/configsets/default/conf/lang/stopwords_es.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/solr/configsets/default/conf/lang/stopwords_eu.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/solr/configsets/default/conf/lang/stopwords_fa.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/solr/configsets/default/conf/lang/stopwords_fi.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/solr/configsets/default/conf/lang/stopwords_fr.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/solr/configsets/default/conf/lang/stopwords_ga.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/solr/configsets/default/conf/lang/stopwords_gl.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/solr/configsets/default/conf/lang/stopwords_hi.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/solr/configsets/default/conf/lang/stopwords_hu.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/solr/configsets/default/conf/lang/stopwords_hy.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/solr/configsets/default/conf/lang/stopwords_id.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/solr/configsets/default/conf/lang/stopwords_it.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/solr/configsets/default/conf/lang/stopwords_ja.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/solr/configsets/default/conf/lang/stopwords_lv.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/solr/configsets/default/conf/lang/stopwords_nl.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/solr/configsets/default/conf/lang/stopwords_no.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/solr/configsets/default/conf/lang/stopwords_pt.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/solr/configsets/default/conf/lang/stopwords_ro.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/solr/configsets/default/conf/lang/stopwords_ru.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/solr/configsets/default/conf/lang/stopwords_sv.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/solr/configsets/default/conf/lang/stopwords_th.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/solr/configsets/default/conf/lang/stopwords_tr.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/solr/configsets/default/conf/lang/userdict_ja.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/solr/configsets/default/conf/protwords.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/solr/configsets/default/conf/schema.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/solr/configsets/default/conf/solrconfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/solr/configsets/default/conf/spellings.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/solr/configsets/default/conf/stopwords.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/solr/configsets/default/conf/synonyms.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/solr/solr.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/solr/spellcheck/conf/currency.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/solr/spellcheck/conf/elevate.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/solr/spellcheck/conf/lang/contractions_ca.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/solr/spellcheck/conf/lang/contractions_fr.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/solr/spellcheck/conf/lang/contractions_ga.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/solr/spellcheck/conf/lang/contractions_it.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/solr/spellcheck/conf/lang/hyphenations_ga.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/solr/spellcheck/conf/lang/stemdict_nl.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/solr/spellcheck/conf/lang/stoptags_ja.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/solr/spellcheck/conf/lang/stopwords_ar.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/solr/spellcheck/conf/lang/stopwords_bg.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/solr/spellcheck/conf/lang/stopwords_ca.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/solr/spellcheck/conf/lang/stopwords_cz.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/solr/spellcheck/conf/lang/stopwords_da.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/solr/spellcheck/conf/lang/stopwords_de.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/solr/spellcheck/conf/lang/stopwords_el.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/solr/spellcheck/conf/lang/stopwords_en.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/solr/spellcheck/conf/lang/stopwords_es.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/solr/spellcheck/conf/lang/stopwords_eu.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/solr/spellcheck/conf/lang/stopwords_fa.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/solr/spellcheck/conf/lang/stopwords_fi.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/solr/spellcheck/conf/lang/stopwords_fr.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/solr/spellcheck/conf/lang/stopwords_ga.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/solr/spellcheck/conf/lang/stopwords_gl.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/solr/spellcheck/conf/lang/stopwords_hi.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/solr/spellcheck/conf/lang/stopwords_hu.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/solr/spellcheck/conf/lang/stopwords_hy.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/solr/spellcheck/conf/lang/stopwords_id.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/solr/spellcheck/conf/lang/stopwords_it.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/solr/spellcheck/conf/lang/stopwords_ja.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/solr/spellcheck/conf/lang/stopwords_lv.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/solr/spellcheck/conf/lang/stopwords_nl.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/solr/spellcheck/conf/lang/stopwords_no.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/solr/spellcheck/conf/lang/stopwords_pt.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/solr/spellcheck/conf/lang/stopwords_ro.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/solr/spellcheck/conf/lang/stopwords_ru.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/solr/spellcheck/conf/lang/stopwords_sv.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/solr/spellcheck/conf/lang/stopwords_th.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/solr/spellcheck/conf/lang/stopwords_tr.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/solr/spellcheck/conf/lang/userdict_ja.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/solr/spellcheck/conf/protwords.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/solr/spellcheck/conf/schema.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/solr/spellcheck/conf/solrconfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/solr/spellcheck/core.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/tlappend.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/resources/css/toolbar.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/setup/browser_config.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/setup/components.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/setup/database/oracle/create_db.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/setup/database/oracle/create_tables.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/setup/database/oracle/database.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/setup/database/oracle/database_information.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/setup/database/oracle/drop_db.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/setup/database/oracle/drop_tables.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/setup/database/oracle/logo_alkacon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/setup/database/oracle/step_4_database_setup.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/setup/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/setup/license.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/setup/resources/check.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/setup/resources/cross.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/setup/resources/error.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/setup/resources/help.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/setup/resources/logo_alkacon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/setup/resources/logo_opencms.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/setup/resources/ok.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/setup/resources/test1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/setup/resources/test2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/setup/resources/unknown.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/setup/resources/wait.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/setup/resources/warning.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/setup/step_10_finished.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/setup/step_2_check_components.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/setup/step_3_database_selection.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/setup/step_4a_database_validation.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/setup/step_5_database_creation.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/setup/step_6_module_selection.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/setup/step_7_save_properties.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/setup/step_8_import_modules.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/setup/step_8a_display_import.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/setup/step_8b_data_import.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/setup/step_9_browser_configuration_notes.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPENCMS/setup/versions.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="450">
+              <caret line="30" column="17" lean-forward="true" selection-start-line="30" selection-start-column="17" selection-end-line="30" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="752" />
+    <option name="y" value="24" />
+    <option name="width" value="688" />
+    <option name="height" value="876" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="sfz-glpi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Portal-EFAZ" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8b765ee0-35a6-47d4-8a8e-e6083be97315" name="Default Changelist" comment="" />
+      <created>1549572674382</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1549572674382</updated>
+      <workItem from="1549572675658" duration="56000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="56000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="65" y="-4" width="1375" height="904" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Image Layers" />
+      <window_info id="Designer" />
+      <window_info id="UI Designer" />
+      <window_info id="Capture Tool" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12039127" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Maven" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="17" lean-forward="true" selection-start-line="30" selection-start-column="17" selection-end-line="30" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
