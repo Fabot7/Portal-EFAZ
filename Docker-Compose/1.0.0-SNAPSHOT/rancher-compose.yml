@@ -1,0 +1,11 @@
+.catalog:
+  name: sfz-portal-efaz
+  version: 1.0.0-SNAPSHOT
+  description:
+    sfz-portal-efaz
+  
+OpenCMS-DB:
+  scale: 1
+
+OpenCMS-App:
+  scale: 1
