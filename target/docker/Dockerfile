@@ -34,6 +34,7 @@ WORKDIR /var/tmp
 
 COPY opencms.properties opencms.properties
 COPY database.properties database.properties
+COPY First_Startup.sh First_Startup.sh
 
 #===============================================================#
 #---- Download, descompactação e posicionamento do OpenCMS -----#

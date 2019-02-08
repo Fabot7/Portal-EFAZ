@@ -1,9 +1,9 @@
 OpenCMS-DB:
-  image: alexeiled/docker-oracle-xe-11g
+  image: ignatov/docker-oracle-xe-11g
   container_name: OpenCMS-DB
   ports:
     - "15080:8080"
-    - "1599:1521"
+    - "1521:1521"
   stdin_open: true
   volumes:
     - /var/lib/docker/volumes/OpenCMS/DB:/usr/lib/oracle/xe/oradata/XE
@@ -16,12 +16,12 @@ OpenCMS-App:
   image: sfz-dhub-001.sefaz.al.gov.br:5000/sefaz/sfz-portal-efaz:9.1.12
   container_name: OpenCMS-App
   environment:
-    OCSERVER: http://10.10.214.71:8088
+    OCSERVER: localhost:8080
     DB_USER: system
     DB_PWD: oracle
     DB_DB: opencms
     DB_PRODUCT: oracle
-    DB_URL: jdbc:oracle:thin:@10.10.250.130:1599:orcl
+    DB_URL: jdbc:oracle:thin:@localhost:1521:orcl
   stdin_open: true
   volumes:
     - /var/lib/docker/volumes/OpenCMS/App:/var/lib/tomcat8
