@@ -13,7 +13,7 @@ OpenCMS-DB:
     io.rancher.container.pull_image: always
 
 OpenCMS-App:
-  image: sfz-dhub-001.sefaz.al.gov.br:5000/sefaz/sfz-portal-efaz:9.1.12
+  image: sfz-dhub-001.sefaz.al.gov.br:5000/sefaz/sfz-portal-efaz:1.0.0-SNAPSHOT
   container_name: OpenCMS-App
   environment:
     OCSERVER: localhost:8080
