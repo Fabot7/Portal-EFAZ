@@ -102,5 +102,5 @@ VOLUME ["/var/lib/tomcat8"]
 #----------- Executa o script shell na inicialização -----------#
 #===============================================================#
 
-CMD ["/var/tmp/First_Startup.sh"]
+CMD ["/var/tmp/Startup.sh"]
 
