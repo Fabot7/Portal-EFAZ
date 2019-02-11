@@ -1,7 +1,7 @@
 #===============================================================#
 #------------ Imagem base da biblioteca java jre 8 -------------#
 #===============================================================#
-FROM java:8-jre
+FROM tomcat:8-jre11
 
 #===============================================================#
 #----- Mantenedor local do sistema dockerizado Portal EFAZ -----#
@@ -14,6 +14,13 @@ MAINTAINER Fábio Silva da Conceição <fsconceicao@sefaz.al.gov.br>
 ENV DEBIAN_FRONTEND=noninteractive \
     TOMCAT=tomcat8
 
+ENV WEBAPPS_HOME=/var/lib/${TOMCAT}/webapps \
+    WEBAPPS_HOME_INSTALL=/var/lib/${TOMCAT}/webapps-install \
+    OPENCMS_HOME=/var/lib/${TOMCAT}/webapps/ROOT \
+    OPENCMS_HOME_INSTALL=/var/lib/${TOMCAT}/webapps-install/ROOT \
+    CONFIG_FILE=/setup.properties \
+    OPENCMS_COMPONENTS=workplace,demo
+
 #===============================================================#
 #----------- Instalação de complementos e utilitários ----------#
 #===============================================================#
@@ -22,9 +29,17 @@ RUN \
     apt-get update && \
 # Install tomcat8, wget, and unzip
     apt-get install -yq --no-install-recommends \
-        ${TOMCAT} \
         wget \
         unzip
+#===============================================================#
+#-------------------- Instalação Tomcat ------------------------#
+#===============================================================#
+
+RUN apt-get install Tomcat8
+
+#===============================================================#
+#------------------ Define diretório de trabalho----------------#
+#===============================================================#
 
 WORKDIR /var/tmp
 
@@ -72,4 +87,6 @@ VOLUME ["/var/lib/tomcat8"]
 #===============================================================#
 #----------- Executa o script shell na inicialização -----------#
 #===============================================================#
+
 CMD ["/var/tmp/First_Startup.sh"]
+

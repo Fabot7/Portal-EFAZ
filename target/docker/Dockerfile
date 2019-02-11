@@ -14,6 +14,13 @@ MAINTAINER Fábio Silva da Conceição <fsconceicao@sefaz.al.gov.br>
 ENV DEBIAN_FRONTEND=noninteractive \
     TOMCAT=tomcat8
 
+ENV WEBAPPS_HOME=/var/lib/${TOMCAT}/webapps \
+    WEBAPPS_HOME_INSTALL=/var/lib/${TOMCAT}/webapps-isntal \
+    OPENCMS_HOME=/var/lib/${TOMCAT}/webapps/ROOT \
+    OPENCMS_HOME_INSTALL=/var/lib/${TOMCAT}/webapps-install/ROOT \
+    CONFIG_FILE=/setup.properties \
+    OPENCMS_COMPONENTS=workplace,demo
+
 #===============================================================#
 #----------- Instalação de complementos e utilitários ----------#
 #===============================================================#
@@ -22,9 +29,24 @@ RUN \
     apt-get update && \
 # Install tomcat8, wget, and unzip
     apt-get install -yq --no-install-recommends \
-        ${TOMCAT} \
         wget \
         unzip
+#===============================================================#
+#-------------------- Instalação Tomcat ------------------------#
+#===============================================================#
+
+RUN groupadd tomcat
+RUN useradd -s /bin/false -g tomcat -d /opt/tomcat tomcat
+RUN cd /var/tmp
+RUN apt-get install TOMCAT8 -y
+RUN mkdir /opt/tomcat
+RUN cd /opt/tomcat
+RUN chgrp -R tomcat /opt/tomcat
+
+
+#===============================================================#
+#------------------ Define diretório de trabalho----------------#
+#===============================================================#
 
 WORKDIR /var/tmp
 
@@ -72,4 +94,6 @@ VOLUME ["/var/lib/tomcat8"]
 #===============================================================#
 #----------- Executa o script shell na inicialização -----------#
 #===============================================================#
+
 CMD ["/var/tmp/First_Startup.sh"]
+
