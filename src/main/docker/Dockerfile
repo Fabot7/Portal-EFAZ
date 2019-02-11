@@ -14,12 +14,10 @@ MAINTAINER Fábio Silva da Conceição <fsconceicao@sefaz.al.gov.br>
 ENV DEBIAN_FRONTEND=noninteractive \
     TOMCAT=tomcat8
 
-ENV WEBAPPS_HOME=/var/lib/${TOMCAT}/webapps \
-    WEBAPPS_HOME_INSTALL=/var/lib/${TOMCAT}/webapps-install \
-    OPENCMS_HOME=/var/lib/${TOMCAT}/webapps/ROOT \
-    OPENCMS_HOME_INSTALL=/var/lib/${TOMCAT}/webapps-install/ROOT \
-    CONFIG_FILE=/setup.properties \
-    OPENCMS_COMPONENTS=workplace,demo
+#===============================================================#
+#------------------ Define diretório de trabalho----------------#
+#===============================================================#
+WORKDIR /var/tmp
 
 #===============================================================#
 #----------- Instalação de complementos e utilitários ----------#
@@ -32,16 +30,40 @@ RUN \
         wget \
         unzip
 #===============================================================#
-#-------------------- Instalação Tomcat ------------------------#
+#------------------- Instalação do Tomcat8 ---------------------#
 #===============================================================#
+RUN \
+#Install Java
+sudo apt-get update
+sudo apt-get install default-jdk
 
-RUN apt-get install Tomcat8
+RUN \
+#Create Tomcat User
+sudo groupadd tomcat
+sudo useradd -s /bin/false -g tomcat -d /opt/tomcat tomcat
 
-#===============================================================#
-#------------------ Define diretório de trabalho----------------#
-#===============================================================#
+RUN \
+#Install Tomcat
+cd /tmp
+curl -O http://mirror.nbtelecom.com.br/apache/tomcat/tomcat-8/v8.5.38/bin/apache-tomcat-8.5.38.tar.gz
+sudo mkdir /opt/tomcat
+sudo tar xzvf apache-tomcat-8*tar.gz -C /opt/tomcat --strip-components=1
 
-WORKDIR /var/tmp
+RUN \
+#Update Permissions
+cd /opt/tomcat
+sudo chgrp -R tomcat /opt/tomcat
+sudo chmod -R g+r conf
+sudo chmod g+x conf
+sudo chown -R tomcat webapps/ work/ temp/ logs/
+
+RUN \
+#Create a systemd Service File
+sudo update-java-alternatives -l
+
+RUN rm -R /etc/systemd/system/tomcat.service
+
+COPY tomcat.service /etc/systemd/system/tomcat.service
 
 #===============================================================#
 #----- Copia os arquivos de configuração para o container ------#
@@ -65,14 +87,6 @@ RUN rm -Rf OPENCMS/setup/database/database.properties
 
 RUN mv opencms.properties OPENCMS/WEB-INF/config/opencms.properties
 RUN mv database.properties OPENCMS/setup/database/oracle/database.properties
-
-
-#===============================================================#
-#----- Copia o conteúdo Tomcat8 para a '/var/tmp/tomcat8' ------#
-#===============================================================#
-RUN mkdir -p /var/tmp/tomcat8/
-RUN cp -R /var/lib/tomcat8/* /var/tmp/tomcat8/
-RUN rm -Rf /var/tmp/tomcat8/webapps/
 
 #===============================================================#
 #----- Expôe a porta padrão do servidor web Apache Tomcat ------#
