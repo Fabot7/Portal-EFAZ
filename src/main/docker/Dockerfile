@@ -63,6 +63,7 @@ COPY tomcat.service /etc/systemd/system/tomcat.service
 COPY opencms.properties opencms.properties
 COPY database.properties database.properties
 COPY Startup.sh Startup.sh
+COPY create_tomcat_user.sh create_tomcat_user.sh
 
 #===============================================================#
 #---- Download, descompactação e posicionamento do OpenCMS -----#
