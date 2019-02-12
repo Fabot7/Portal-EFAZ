@@ -16,7 +16,7 @@ OpenCMS-App:
   image: sfz-dhub-001.sefaz.al.gov.br:5000/sefaz/sfz-portal-efaz:1.0.0-SNAPSHOT
   container_name: OpenCMS-App
   environment:
-    OCSERVER: localhost:8080
+    OCSERVER: http://localhost:8088
     DB_USER: system
     DB_PWD: oracle
     DB_DB: opencms
@@ -24,7 +24,7 @@ OpenCMS-App:
     DB_URL: jdbc:oracle:thin:@localhost:1521:orcl
   stdin_open: true
   volumes:
-    - /var/lib/docker/volumes/OpenCMS/App:/var/lib/tomcat8
+    - /var/lib/docker/volumes/OpenCMS/App:/usr/local/tomcat/
   tty: true
   links:
     - OpenCMS-DB
