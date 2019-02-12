@@ -22,44 +22,35 @@ WORKDIR /var/tmp
 #===============================================================#
 #----------- Instalação de complementos e utilitários ----------#
 #===============================================================#
-RUN \
+
 # Update the apt packet repos
-    apt-get update && \
+RUN apt-get update
 # Install tomcat8, wget, and unzip
-    apt-get install -yq --no-install-recommends \
-        wget \
-        unzip
+RUN apt install -yq --no-install-recommends
+RUN wget
+RUN unzip
+
 #===============================================================#
 #------------------- Instalação do Tomcat8 ---------------------#
 #===============================================================#
-RUN \
-#Install Java
-sudo apt-get update
-sudo apt-get install default-jdk
+RUN apt-get update
+RUN apt install default-jdk
 
-RUN \
-#Create Tomcat User
-sudo groupadd tomcat
-sudo useradd -s /bin/false -g tomcat -d /opt/tomcat tomcat
+RUN groupadd tomcat
+RUN useradd -s /bin/false -g tomcat -d /opt/tomcat tomcat
 
-RUN \
-#Install Tomcat
-cd /tmp
-curl -O http://mirror.nbtelecom.com.br/apache/tomcat/tomcat-8/v8.5.38/bin/apache-tomcat-8.5.38.tar.gz
-sudo mkdir /opt/tomcat
-sudo tar xzvf apache-tomcat-8*tar.gz -C /opt/tomcat --strip-components=1
+RUN cd /tmp
+RUN curl -O http://mirror.nbtelecom.com.br/apache/tomcat/tomcat-8/v8.5.38/bin/apache-tomcat-8.5.38.tar.gz
+RUN mkdir /opt/tomcat
+RUN tar xzvf apache-tomcat-8*tar.gz -C /opt/tomcat --strip-components=1
 
-RUN \
-#Update Permissions
-cd /opt/tomcat
-sudo chgrp -R tomcat /opt/tomcat
-sudo chmod -R g+r conf
-sudo chmod g+x conf
-sudo chown -R tomcat webapps/ work/ temp/ logs/
+RUN cd /opt/tomcat
+RUN chgrp -R tomcat /opt/tomcat
+RUN chmod -R g+r conf
+RUN chmod g+x conf
+RUN chown -R tomcat webapps/ work/ temp/ logs/
 
-RUN \
-#Create a systemd Service File
-sudo update-java-alternatives -l
+RUN update-java-alternatives -l
 
 RUN rm -R /etc/systemd/system/tomcat.service
 
