@@ -89,7 +89,7 @@ EXPOSE 8080
 #===============================================================#
 #---- Abre o diretório do projeto webapps para persistência ----#
 #===============================================================#
-VOLUME ["/var/lib/tomcat8"]
+VOLUME ["/usr/local/tomcat/"]
 
 #===============================================================#
 #----------- Executa o script shell na inicialização -----------#

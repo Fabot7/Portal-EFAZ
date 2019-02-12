@@ -1,7 +1,7 @@
 #!/bin/bash
 
-mkdir -p /var/lib/tomcat8/webapps/ROOT
-cp -r /var/tmp/OPENCMS/* /var/lib/tomcat8/webapps/ROOT/
+mkdir -p /usr/local/tomcat/webapps/ROOT
+cp -r /var/tmp/OPENCMS/* /usr/local/tomcat/webapps/ROOT/
 
 if [ ! -f ${CATALINA_HOME}/.tomcat_created ]; then
   ${CATALINA_HOME}/bin/create_tomcat_user.sh
