@@ -34,5 +34,5 @@ fi
 export LANG="en_US.UTF-8"
 export JAVA_OPTS="$JAVA_OPTS -Duser.language=en -Duser.country=US"
 export CATALINA_PID=${CATALINA_HOME}/temp/tomcat.pid
-export CATALINA_OPTS="$CATALINA_OPTS  -Xmx${JAVA_MAXMEMORY}m -DjvmRoute=${TOMCAT_JVM_ROUTE}  -Dtomcat.maxThreads=${TOMCAT_MAXTHREADS}  -Dtomcat.minSpareThreads=${TOMCAT_MINSPARETHREADS}  -Dtomcat.httpTimeout=${TOMCAT_HTTPTIMEOUT}  -Djava.security.egd=file:/dev/./urandom"
+#export CATALINA_OPTS="$CATALINA_OPTS  -Xmx${JAVA_MAXMEMORY} -DjvmRoute=${TOMCAT_JVM_ROUTE}  -Dtomcat.maxThreads=${TOMCAT_MAXTHREADS}  -Dtomcat.minSpareThreads=${TOMCAT_MINSPARETHREADS}  -Dtomcat.httpTimeout=${TOMCAT_HTTPTIMEOUT}  -Djava.security.egd=file:/dev/./urandom"
 exec ${CATALINA_HOME}/bin/catalina.sh run

@@ -50,10 +50,6 @@ RUN chmod -R g+r /opt/tomcat/conf/
 RUN chmod g+x /opt/tomcat/conf/
 RUN chown -R tomcat /opt/tomcat/webapps/ /opt/tomcat/work/ /opt/tomcat/temp/ /opt/tomcat/logs/
 
-#RUN update-java-alternatives -l
-
-#RUN rm -R /etc/systemd/system/tomcat.service
-
 COPY tomcat.service /etc/systemd/system/tomcat.service
 
 #===============================================================#
@@ -63,6 +59,12 @@ COPY tomcat.service /etc/systemd/system/tomcat.service
 COPY opencms.properties opencms.properties
 COPY database.properties database.properties
 COPY Startup.sh Startup.sh
+
+RUN chmod 777 /usr/local/tomcat/bin/
+
+COPY create_tomcat_user.sh /usr/local/tomcat/bin/create_tomcat_user.sh
+
+RUN chmod 777 /usr/local/tomcat/bin/create_tomcat_user.sh
 
 #===============================================================#
 #---- Download, descompactação e posicionamento do OpenCMS -----#
