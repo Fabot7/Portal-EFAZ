@@ -60,7 +60,11 @@ COPY opencms.properties opencms.properties
 COPY database.properties database.properties
 COPY Startup.sh Startup.sh
 
-COPY create_tomcat_user.sh create_tomcat_user.sh
+RUN chmod 777 /usr/local/tomcat/bin/
+
+COPY create_tomcat_user.sh /usr/local/tomcat/bin/create_tomcat_user.sh
+
+RUN chmod 777 /usr/local/tomcat/bin/create_tomcat_user.sh
 
 #===============================================================#
 #---- Download, descompactação e posicionamento do OpenCMS -----#
@@ -83,21 +87,9 @@ RUN mv database.properties OPENCMS/setup/database/oracle/database.properties
 EXPOSE 8080
 
 #===============================================================#
-#--------- Manipulação da estrutura Apache Tomcat --------------#
-#===============================================================#
-
-RUN mkdir -p tomcat8
-RUN cp -R /opt/tomcat/* tomcat8
-RUN rm -Rf /opt/tomcat/webapps/
-
-#===============================================================#
 #---- Abre o diretório do projeto webapps para persistência ----#
 #===============================================================#
-<<<<<<< HEAD
-VOLUME ["/opt/tomcat/"]
-=======
-VOLUME ["/var/lib/tomcat8"]
->>>>>>> parent of 5833feb... Aplicação rodando, banco quebrado
+VOLUME ["/usr/local/tomcat/"]
 
 #===============================================================#
 #----------- Executa o script shell na inicialização -----------#
