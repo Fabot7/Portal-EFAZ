@@ -1,14 +1,7 @@
 #!/bin/bash
 
-chmod 777 -R /opt/tomcat/
-chown -R tomcat /opt/tomcat
-cp -R /var/tmp/tomcat8/* /opt/tomcat/
-
-mkdir -p /opt/tomcat/webapps/ROOT
-cp -r /var/tmp/OPENCMS/* /opt/tomcat/webapps/ROOT/
-
-cp -r /var/tmp/create_tomcat_user.sh /opt/tomcat/bin/create_tomcat_user.sh
-
+mkdir -p /usr/local/tomcat/webapps/ROOT
+cp -r /var/tmp/OPENCMS/* /usr/local/tomcat/webapps/ROOT/
 
 if [ ! -f ${CATALINA_HOME}/.tomcat_created ]; then
   ${CATALINA_HOME}/bin/create_tomcat_user.sh

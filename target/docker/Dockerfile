@@ -93,7 +93,11 @@ RUN rm -Rf /opt/tomcat/webapps/
 #===============================================================#
 #---- Abre o diretório do projeto webapps para persistência ----#
 #===============================================================#
+<<<<<<< HEAD
 VOLUME ["/opt/tomcat/"]
+=======
+VOLUME ["/var/lib/tomcat8"]
+>>>>>>> parent of 5833feb... Aplicação rodando, banco quebrado
 
 #===============================================================#
 #----------- Executa o script shell na inicialização -----------#
