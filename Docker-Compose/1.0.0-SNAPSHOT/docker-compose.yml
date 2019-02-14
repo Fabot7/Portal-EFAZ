@@ -24,7 +24,7 @@ OpenCMS-App:
     DB_URL: jdbc:oracle:thin:@10.10.214.71:1521:opencms
   stdin_open: true
   volumes:
-    - /var/lib/docker/volumes/OpenCMS/App:/var/lib/tomcat8
+    - /var/lib/docker/volumes/OpenCMS/App:/tmp
   tty: true
   links:
     - OpenCMS-DB
