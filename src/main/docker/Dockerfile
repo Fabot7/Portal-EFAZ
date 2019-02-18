@@ -76,7 +76,7 @@ RUN unzip opencms-10.5.4.zip
 RUN unzip -d OPENCMS opencms.war
 
 RUN rm -Rf OPENCMS/WEB-INF/config/opencms.properties
-RUN rm -Rf OPENCMS/setup/database/oracle/database.properties
+RUN rm -Rf OPENCMS/setup/database/database.properties
 
 RUN mv opencms.properties OPENCMS/WEB-INF/config/opencms.properties
 RUN mv database.properties OPENCMS/setup/database/oracle/database.properties
