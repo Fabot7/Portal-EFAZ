@@ -28578,7 +28578,7 @@
     </table>
     <table id="4102" parent="12" name="MVIEW$_ADV_FJG">
       <ObjectId>4205</ObjectId>
-      <Comment>Representation for query join sub-graph not in AJG </Comment>
+      <Comment>Representation for query join sub-graph not in AJG</Comment>
       <CreatedTimestamp>2011-08-28.19:11:36</CreatedTimestamp>
       <ModifiedTimestamp>2011-08-28.19:11:36</ModifiedTimestamp>
       <TemporaryPreserve>1</TemporaryPreserve>
@@ -29036,7 +29036,7 @@
       <ObjectId>4231</ObjectId>
       <Comment>This view gives DBA access to dimension validation results</Comment>
       <SourceTextLength>269</SourceTextLength>
-      <DependsOnIds>3532,4215,4196</DependsOnIds>
+      <DependsOnIds>3532,4196,4215</DependsOnIds>
       <CreatedTimestamp>2011-08-28.19:11:37</CreatedTimestamp>
       <ModifiedTimestamp>2011-08-28.19:11:37</ModifiedTimestamp>
       <Modifiable>1</Modifiable>
@@ -29081,7 +29081,7 @@
       <ObjectId>4225</ObjectId>
       <Comment>This view gives DBA access to shared workload</Comment>
       <SourceTextLength>436</SourceTextLength>
-      <DependsOnIds>3532,4196,4183</DependsOnIds>
+      <DependsOnIds>3532,4183,4196</DependsOnIds>
       <CreatedTimestamp>2011-08-28.19:11:37</CreatedTimestamp>
       <ModifiedTimestamp>2011-08-28.19:11:37</ModifiedTimestamp>
       <Modifiable>1</Modifiable>
@@ -36112,7 +36112,7 @@ DATA_TYPE_ID</ColNames>
                   data_length is not null)
               or (data_type_id not in (2, 4, 5, 6, 7) and
                   data_length is null)
-                 </Predicate>
+</Predicate>
     </check>
     <check id="5598" parent="4119" name="REPCAT$_AUDIT_ATTRIBUTE_NN2">
       <ModifiedTimestamp>2011-08-28.19:12:20</ModifiedTimestamp>
@@ -40444,7 +40444,7 @@ USER_ID</ColNames>
     <body id="6323" parent="4175" name="DBMS_REPCAT_AUTH">
       <ObjectId>12128</ObjectId>
       <Obfuscated>1</Obfuscated>
-      <DependsOnIds>7908,4969</DependsOnIds>
+      <DependsOnIds>4969,7908</DependsOnIds>
       <CreatedTimestamp>2011-08-28.19:15:52</CreatedTimestamp>
       <ModifiedTimestamp>2011-08-28.19:15:52</ModifiedTimestamp>
     </body>
