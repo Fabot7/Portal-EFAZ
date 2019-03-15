@@ -40,7 +40,7 @@ RUN groupadd tomcat
 RUN useradd -s /bin/false -g tomcat -d /opt/tomcat tomcat
 
 RUN cd /tmp
-RUN curl -O http://mirror.nbtelecom.com.br/apache/tomcat/tomcat-8/v8.5.38/bin/apache-tomcat-8.5.38.tar.gz
+COPY apache-tomcat-8.5.38.tar.gz apache-tomcat-8.5.38.tar.gz
 RUN mkdir /opt/tomcat
 RUN tar xzvf apache-tomcat-8*tar.gz -C /opt/tomcat --strip-components=1
 
