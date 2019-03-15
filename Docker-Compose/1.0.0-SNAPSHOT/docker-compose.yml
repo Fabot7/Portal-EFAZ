@@ -1,27 +1,14 @@
-OpenCMS-DB:
-  image: ignatov/docker-oracle-xe-11g
-  container_name: OpenCMS-DB
-  ports:
-    - "15080:8080"
-    - "1521:1521"
-  stdin_open: true
-  tty: true
-  labels:
-    io.rancher.container.pull_image: always
-
 OpenCMS-App:
   image: sfz-dhub-001.sefaz.al.gov.br:5000/sefaz/sfz-portal-efaz:1.0.0-SNAPSHOT
   container_name: OpenCMS-App
   environment:
     OCSERVER: http://10.10.214.10:8080
-    DB_NAME: oracle
+    DB_NAME: opencms
     DB_USER: system
     DB_PWD: oracle
     DB_PRODUCT: oracle
   stdin_open: true
   tty: true
-  links:
-    - OpenCMS-DB
   ports:
     - 8080:8080
   labels:

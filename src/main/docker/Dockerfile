@@ -57,8 +57,9 @@ COPY tomcat.service /etc/systemd/system/tomcat.service
 #===============================================================#
 
 COPY opencms.properties opencms.properties
-COPY database.properties database.properties
 COPY Startup.sh Startup.sh
+COPY tags/ tags/
+COPY opencms-modules.xml opencms-modules.xml
 
 RUN chmod 777 /usr/local/tomcat/bin/
 
@@ -70,16 +71,19 @@ RUN chmod 777 /usr/local/tomcat/bin/create_tomcat_user.sh
 #---- Download, descompactação e posicionamento do OpenCMS -----#
 #===============================================================#
 
+
 RUN wget http://www.opencms.org/downloads/opencms/opencms-10.5.4.zip
 
 RUN unzip opencms-10.5.4.zip
 RUN unzip -d OPENCMS opencms.war
 
 RUN rm -Rf OPENCMS/WEB-INF/config/opencms.properties
-RUN rm -Rf OPENCMS/setup/database/database.properties
+RUN rm -Rf OPENCMS/WEB-INF/config/opencms-modules.xml
 
 RUN mv opencms.properties OPENCMS/WEB-INF/config/opencms.properties
-RUN mv database.properties OPENCMS/setup/database/oracle/database.properties
+RUN mv opencms-modules.xml OPENCMS/WEB-INF/config/opencms-modules.xml
+RUN mv tags/ OPENCMS/WEB-INF/tags/
+
 
 #===============================================================#
 #----- Expôe a porta padrão do servidor web Apache Tomcat ------#
