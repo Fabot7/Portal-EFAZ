@@ -8,24 +8,27 @@ FROM tomcat:8-jre11
 #===============================================================#
 MAINTAINER Fábio Silva da Conceição <fsconceicao@sefaz.al.gov.br>
 
-#===============================================================#
-#------------ Declaração de variáveis de ambiente --------------#
-#===============================================================#
-ENV DEBIAN_FRONTEND=noninteractive \
-    TOMCAT=tomcat8
+WORKDIR /
 
-#===============================================================#
-#------------------ Define diretório de trabalho----------------#
-#===============================================================#
-WORKDIR /var/tmp
+# Variables used in the shell scripts loaded from the file system
+ENV DEBIAN_FRONTEND=noninteractive
+ENV TOMCAT=tomcat
+
+ENV WEBAPPS_HOME=/usr/local/${TOMCAT}/webapps
+ENV WEBAPPS_HOME_INSTALL=/usr/local/${TOMCAT}/webapps
+ENV OPENCMS_HOME=/opt/tomcat/webapps/ROOT
+ENV OPENCMS_HOME_INSTALL=/usr/local/${TOMCAT}/webapps/ROOT
+ENV CONFIG_FILE=/setup.properties
+ENV OPENCMS_COMPONENTS=workplace,demo
+
+COPY resources/ resources
+
+COPY packages/ packages
 
 #===============================================================#
 #----------- Instalação de complementos e utilitários ----------#
 #===============================================================#
-
-# Update the apt packet repos
 RUN apt-get update
-# Install tomcat8, wget, and unzip
 
 RUN apt install -yq --no-install-recommends wget
 RUN apt install -yq --no-install-recommends unzip
@@ -33,7 +36,6 @@ RUN apt install -yq --no-install-recommends unzip
 #===============================================================#
 #------------------- Instalação do Tomcat8 ---------------------#
 #===============================================================#
-RUN apt-get update
 RUN apt install -yq --no-install-recommends default-jdk
 
 RUN groupadd tomcat
@@ -44,24 +46,12 @@ COPY apache-tomcat-8.5.38.tar.gz apache-tomcat-8.5.38.tar.gz
 RUN mkdir /opt/tomcat
 RUN tar xzvf apache-tomcat-8*tar.gz -C /opt/tomcat --strip-components=1
 
-
 RUN chgrp -R tomcat /opt/tomcat
 RUN chmod -R g+r /opt/tomcat/conf/
 RUN chmod g+x /opt/tomcat/conf/
-RUN chown -R tomcat /opt/tomcat/webapps/ /opt/tomcat/work/ /opt/tomcat/temp/ /opt/tomcat/logs/
+RUN chown -R tomcat /opt/tomcat/webapps/ /opt/tomcat/work/ /opt/tomcat/temp/ /opt/tomcat/logs
 
 COPY tomcat.service /etc/systemd/system/tomcat.service
-
-#===============================================================#
-#----- Copia os arquivos de configuração para o container ------#
-#===============================================================#
-
-COPY opencms.properties opencms.properties
-COPY Startup.sh Startup.sh
-COPY tags/ tags/
-COPY opencms-modules.xml opencms-modules.xml
-
-RUN chmod 777 /usr/local/tomcat/bin/
 
 COPY create_tomcat_user.sh /usr/local/tomcat/bin/create_tomcat_user.sh
 
@@ -71,33 +61,34 @@ RUN chmod 777 /usr/local/tomcat/bin/create_tomcat_user.sh
 #---- Download, descompactação e posicionamento do OpenCMS -----#
 #===============================================================#
 
-
 RUN wget http://www.opencms.org/downloads/opencms/opencms-10.5.4.zip
 
 RUN unzip opencms-10.5.4.zip
+
 RUN unzip -d OPENCMS opencms.war
 
-RUN rm -Rf OPENCMS/WEB-INF/config/opencms.properties
-RUN rm -Rf OPENCMS/WEB-INF/config/opencms-modules.xml
+RUN chmod 777 -R resources/*
 
-RUN mv opencms.properties OPENCMS/WEB-INF/config/opencms.properties
-RUN mv opencms-modules.xml OPENCMS/WEB-INF/config/opencms-modules.xml
-RUN mv tags/ OPENCMS/WEB-INF/tags/
 
+RUN rm -R /usr/local/tomcat/webapps/ROOT/WEB-INF
+
+RUN mv OPENCMS/* /usr/local/tomcat/webapps/ROOT
 
 #===============================================================#
-#----- Expôe a porta padrão do servidor web Apache Tomcat ------#
+#---------- Execução dos scripts de configuração ---------------#
 #===============================================================#
+
+RUN bash resources/root/opencms-create-properties.sh
+
+RUN bash resources/root/process-script-dir.sh resources/root/preinstall
+
+# Install OpenCms using org.opencms.setup.CmsAutoSetup
+RUN java -classpath "${OPENCMS_HOME_INSTALL}/WEB-INF/lib/*:${OPENCMS_HOME_INSTALL}/WEB-INF/classes:/usr/local/${TOMCAT}/lib/*" org.opencms.setup.CmsAutoSetup -path $CONFIG_FILE
+
+# Run post-install scripts
+RUN bash resources/root/process-script-dir.sh resources/root/postinstall
+
+# Expose port 8080 for Tomcat and define the startup script
 EXPOSE 8080
 
-#===============================================================#
-#---- Abre o diretório do projeto webapps para persistência ----#
-#===============================================================#
-VOLUME ["/usr/local/tomcat/"]
-
-#===============================================================#
-#----------- Executa o script shell na inicialização -----------#
-#===============================================================#
-
-CMD ["/var/tmp/Startup.sh"]
-
+CMD ["resources/root/opencms-run.sh"]
