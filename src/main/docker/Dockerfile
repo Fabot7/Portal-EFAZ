@@ -22,8 +22,13 @@ ENV CONFIG_FILE=/setup.properties
 ENV OPENCMS_COMPONENTS=workplace,demo
 
 COPY resources/ resources
+RUN mkdir /teste
+COPY cmssetup.txt /teste/cmssetup.txt
+COPY opencms-configuration.xslt /teste/opencms-configuration.xslt
 
 COPY packages/ packages
+COPY Startup.sh Startup.sh
+COPY opencms.properties opencms.properties
 
 #===============================================================#
 #----------- Instalação de complementos e utilitários ----------#
@@ -32,6 +37,7 @@ RUN apt-get update
 
 RUN apt install -yq --no-install-recommends wget
 RUN apt install -yq --no-install-recommends unzip
+RUN apt install -yq --no-install-recommends nano
 
 #===============================================================#
 #------------------- Instalação do Tomcat8 ---------------------#
@@ -60,7 +66,6 @@ RUN chmod 777 /usr/local/tomcat/bin/create_tomcat_user.sh
 #===============================================================#
 #---- Download, descompactação e posicionamento do OpenCMS -----#
 #===============================================================#
-
 RUN wget http://www.opencms.org/downloads/opencms/opencms-10.5.4.zip
 
 RUN unzip opencms-10.5.4.zip
@@ -69,26 +74,24 @@ RUN unzip -d OPENCMS opencms.war
 
 RUN chmod 777 -R resources/*
 
-
 RUN rm -R /usr/local/tomcat/webapps/ROOT/WEB-INF
 
+RUN rm /OPENCMS/WEB-INF/config/opencms.properties
+
+RUN cp opencms.properties /OPENCMS/WEB-INF/config/opencms.properties
+
 RUN mv OPENCMS/* /usr/local/tomcat/webapps/ROOT
+
+RUN cp /teste/* /resources/config/
+
+RUN chmod 777 -R /Startup.sh
 
 #===============================================================#
 #---------- Execução dos scripts de configuração ---------------#
 #===============================================================#
 
-RUN bash resources/root/opencms-create-properties.sh
-
-RUN bash resources/root/process-script-dir.sh resources/root/preinstall
-
-# Install OpenCms using org.opencms.setup.CmsAutoSetup
-RUN java -classpath "${OPENCMS_HOME_INSTALL}/WEB-INF/lib/*:${OPENCMS_HOME_INSTALL}/WEB-INF/classes:/usr/local/${TOMCAT}/lib/*" org.opencms.setup.CmsAutoSetup -path $CONFIG_FILE
-
-# Run post-install scripts
-RUN bash resources/root/process-script-dir.sh resources/root/postinstall
 
 # Expose port 8080 for Tomcat and define the startup script
 EXPOSE 8080
 
-CMD ["resources/root/opencms-run.sh"]
+CMD ["/Startup.sh"]
