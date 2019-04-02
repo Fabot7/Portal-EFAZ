@@ -2,10 +2,10 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>br.gov.al.sefaz.site</groupId>
+    <groupId>br.gov.al.sefaz.jasperserdocker</groupId>
     <artifactId>sfz-portal-efaz</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
-    <name>Portal EFAZ</name>
+    <version>1.0.0-201810101030</version>
+    <name>EFAZ</name>
 
     <prerequisites>
         <maven>3.0.0</maven>
@@ -23,11 +23,13 @@
     </distributionManagement>
 
     <properties>
-	<docker.registry.url>sfz-dhub-001.sefaz.al.gov.br:5000</docker.registry.url>
+      	<serverId>repositorio-push</serverId>
+        <docker.registry.url>repositorio-push.sefaz.al.gov.br/</docker.registry.url>
         <docker.imagename>sefaz/sfz-portal-efaz</docker.imagename>
-        <repositorio.base.url>http://repositorio.sefaz.al.gov.br</repositorio.base.url>
-        <repositorio.releases.url>${repositorio.base.url}/content/repositories/releases</repositorio.releases.url>
-        <repositorio.snapshots.url>${repositorio.base.url}/content/repositories/snapshots</repositorio.snapshots.url>
+        <repositorio.base.url>http://repositorio-v2.sefaz.al.gov.br</repositorio.base.url>
+        <repositorio.releases.url>${repositorio.base.url}/repository/maven-sefaz-releases</repositorio.releases.url>
+        <repositorio.snapshots.url>${repositorio.base.url}/repository/maven-sefaz-snapshots</repositorio.snapshots.url>
+        <repositorio.publico.url>${repositorio.base.url}/repository/maven-public</repositorio.publico.url>
     </properties>
 
     <repositories>
@@ -58,18 +60,26 @@
     <build>
         <plugins>
             <plugin>
-                <groupId>com.spotify</groupId>
-                <artifactId>docker-maven-plugin</artifactId>
-                <version>0.4.10</version>
-                <configuration>
-                    <imageName>${docker.registry.url}/${docker.imagename}</imageName>
-                    <dockerDirectory>src/main/docker</dockerDirectory>
-                    <imageTags>
-                        <imageTag>${project.version}</imageTag>
-                    </imageTags>
-                </configuration>
-            </plugin>
+				<groupId>com.spotify</groupId>
+				<artifactId>docker-maven-plugin</artifactId>
+				<version>0.4.10</version>
+				<configuration>
+					<forceTags>true</forceTags>
+					<imageName>${docker.registry.url}${docker.imagename}:${project.version}</imageName>
+					<dockerDirectory>src/main/docker</dockerDirectory>
+					<resources>
+						<resource>
+							<targetPath>/</targetPath>
+							<directory>${project.build.directory}</directory>
+						</resource>
+					</resources>
+					<imageTags>
+						<imageTag>${project.version}</imageTag>
+						<imageTag>latest</imageTag>
+					</imageTags>
+				</configuration>
+			</plugin>
         </plugins>
     </build>
-
+    
 </project>
